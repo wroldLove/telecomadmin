@@ -28,12 +28,12 @@ def getPwd(token, mac):
 #heads抓包获得
     heads = {
         "Content-Type": "application/json",
-        "SDKVersion": "",
+        "SDKVersion": "3.5.6",
         "phoneNum": "",
         "phoneOS": "",
-        "systemVersion": "",
+        "systemVersion": "15.200000",
         "AppKey": "",
-        "User-Agent": ""
+        "User-Agent": "YueMeTV/3.5.2 (iPhone; iOS 15.2; Scale/2.00)"
     }
     results = requests.post(url=url,data=json.dumps(data),headers=heads)
     
