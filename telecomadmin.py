@@ -25,6 +25,7 @@ def getPwd(token, mac):
         "InterfaceName": "com.ctc.igd1.SysCmd",
         "ServiceName": "com.ctc.igd1"
     }
+
 #heads抓包获得
     heads = {
         "Content-Type": "application/json",
@@ -42,10 +43,11 @@ def getPwd(token, mac):
     except Exception:
         return 
 
+#token,mac必填
 if __name__ == "__main__":
     print(log)
-    token = "" #token必填
-    mac = ""   #mac必填
+    token = ""
+    mac = ""
     pwd = getPwd(token=token, mac=mac)
     x = PrettyTable()
     x.add_column("user",["telecomadmin"])
